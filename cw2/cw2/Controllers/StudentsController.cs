@@ -43,9 +43,18 @@ namespace cw2.Controllers
             return Ok(student);
         }
 
-        //[HttpPut]
-       
-        //[HttpDelete]
+        [HttpPut]
+        public IActionResult PutStudent(int id)
+        {
+            return Ok("Aktualizacja zakończona");
+        }
+        
+        
+        [HttpDelete]
+        public IActionResult DeleteStudent(int id)
+        {
+            return Ok("Usuwanie zakończone");
+        }
 
 
     }
